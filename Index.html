@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Petite Mimi Atelier — Visuels & Contenus pour Petits Commerces</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#121212;color:#EDE6D6;font-family:Inter,system-ui,-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.6}
+a{color:#C9A86A;text-decoration:none}
+header{max-width:1100px;margin:0 auto;padding:18px 20px;display:flex;justify-content:space-between;align-items:center}
+.logo{display:flex;gap:12px;align-items:center}
+.logo img{width:52px;height:52px;border-radius:50%;border:2px solid #C9A86A;object-fit:cover}
+.logo b{font-size:20px;letter-spacing:.5px}
+.logo small{display:block;font-size:12px;color:#C9A86A;font-weight:400}
+.lang button{background:transparent;border:1px solid #C9A86A;color:#EDE6D6;padding:7px 12px;border-radius:999px;cursor:pointer;margin-left:6px}
+.lang button.active{background:#C9A86A;color:#121212;font-weight:700}
+.hero{max-width:1100px;margin:10px auto 0;padding:20px;display:grid;grid-template-columns:1.05fr .95fr;gap:28px;align-items:center}
+.hero h1{font-size:42px;line-height:1.15;color:#fff}
+.hero h1 span{color:#C9A86A}
+.hero p{margin:14px 0;color:#cfc8b8}
+.hero img.main{width:100%;border-radius:20px;border:1px solid #2a2a2a;object-fit:cover;aspect-ratio:4/3}
+.badges{display:flex;gap:8px;flex-wrap:wrap;margin:14px 0}
+.badges span{border:1px solid #3a3226;padding:6px 10px;border-radius:999px;font-size:12px;background:#1c1a16}
+.btn{display:inline-block;background:#C9A86A;color:#121212;padding:12px 18px;border-radius:999px;font-weight:700;margin-right:10px}
+.btn.ghost{background:transparent;color:#EDE6D6;border:1px solid #C9A86A}
+section{max-width:1100px;margin:0 auto;padding:36px 20px}
+h2{font-size:28px;margin-bottom:6px;color:#fff}
+h2 i{color:#C9A86A;font-style:normal}
+.sub{color:#b8b0a0;margin-bottom:20px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.card{background:#1b1a17;border:1px solid #2a2a2a;border-radius:16px;padding:18px}
+.card h3{color:#fff;font-size:17px}
+.card .price{color:#C9A86A;font-size:22px;font-weight:800;margin:8px 0}
+.card p{font-size:14px;color:#cfc8b8}
+.tag{display:inline-block;background:#C9A86A;color:#121212;font-size:11px;font-weight:700;padding:3px 8px;border-radius:999px;margin-bottom:8px}
+.gifs{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.gif{border-radius:16px;overflow:hidden;border:1px solid #2a2a2a;background:#1b1a17}
+.gif img{width:100%;height:220px;object-fit:cover;display:block}
+.gif div{padding:12px 14px}
+.gif small{color:#a99f8d}
+.demo{background:#1b1a17;border:1px solid #2a2a2a;border-radius:16px;padding:18px}
+.demo input,.demo select,.demo textarea{width:100%;padding:10px;border-radius:10px;border:1px solid #333;background:#121212;color:#fff;margin:6px 0}
+.foot{border-top:1px solid #2a2a2a;padding:22px 20px;text-align:center;color:#999;font-size:13px}
+@media(max-width:820px){.hero{grid-template-columns:1fr}.hero h1{font-size:32px}.grid,.gifs{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header>
+<div class="logo">
+<img src="avatar-petite-mimi-final.png" alt="Mimi">
+<div><b>Petite Mimi Atelier</b><small data-fr="Basée à Bergerac, en Dordogne — 100% à distance, partout en France" data-en="Based in Bergerac, Dordogne — 100% remote, all over France" data-zh="位于法国多尔多涅 Bergerac — 全程远程，服务全法国">Basée à Bergerac, en Dordogne — 100% à distance, partout en France</small></div>
+</div>
+<div class="lang"><button onclick="setLang('fr')" id="b-fr" class="active">FR</button><button onclick="setLang('en')" id="b-en">EN</button><button onclick="setLang('zh')" id="b-zh">中文</button></div>
+</header>
+
+<div class="hero">
+<div>
+<h1 data-fr="Visuels & contenus <span>pour petits commerces</span>" data-en="Visuals & content <span>for small businesses</span>" data-zh="为小商家做<span>视觉与内容</span>">Visuels & contenus <span>pour petits commerces</span></h1>
+<p data-fr="Pâtisseries, restaurants, gîtes, boutiques, animaleries. Je vous aide à être vu, compris et choisi — en français, anglais et chinois." data-en="Pâtisseries, restaurants, gîtes, boutiques, pet shops. I help you be seen, understood and chosen — in French, English and Chinese." data-zh="甜品店、餐厅、民宿、精品店、宠物店。我帮你被看见、被理解、被选择 — 法语、英语、中文三语。">Pâtisseries, restaurants, gîtes, boutiques, animaleries. Je vous aide à être vu, compris et choisi — en français, anglais et chinois.</p>
+<div class="badges"><span>FR / EN / 中文</span><span>Bergerac · Dordogne</span><span>100% à distance</span></div>
+<a class="btn" href="mailto:petitemimi.atelier@gmail.com" data-fr="Envoyer un email" data-en="Send an email" data-zh="发邮件联系">Envoyer un email</a>
+<a class="btn ghost" href="#services" data-fr="Voir les services" data-en="See services" data-zh="查看服务">Voir les services</a>
+<p style="margin-top:14px;font-size:13px">Email : petitemimi.atelier@gmail.com</p>
+</div>
+<img class="main" src="image_20261117_153231.webp" alt="Mimi mange une tarte">
+</div>
+
+<section id="services">
+<h2 data-fr="Services <i>— par prix</i>" data-en="Services <i>— by price</i>" data-zh="服务 <i>— 按价格排序</i>">Services <i>— par prix</i></h2>
+<p class="sub" data-fr="Prix affichés = prix final. Pas de Devis compliqué, envoyez un email pour commander." data-en="Listed price = final price. No complicated quote, just email to order." data-zh="标价即最终价。不用复杂报价，发邮件即可下单。">Prix affichés = prix final. Pas de Devis compliqué, envoyez un email pour commander.</p>
+<div class="grid">
+<div class="card"><h3>Traduction & Description Produit</h3><div class="price">à partir de 29€ / page</div><p data-fr="FR <> EN <> CN. Menu, fiche produit, carte de dégustation. Traduction + mise en page, PDF imprimable." data-en="FR <> EN <> CN. Menu, product sheet, tasting card. Translation + layout, printable PDF." data-zh="法语 <> 英语 <> 中文。菜单、产品页、品酒单。翻译 + 排版，可打印 PDF。">FR &lt;&gt; EN &lt;&gt; CN. Menu, fiche produit, carte de dégustation. Traduction + mise en page, PDF imprimable.</p></div>
+<div class="card"><h3>Pack Avis Google</h3><div class="price">79€ / mois</div><p data-fr="Analyse + brouillons de réponses FR / EN, relus par vous avant envoi." data-en="Analysis + reply drafts FR / EN, reviewed by you before sending." data-zh="分析 + 法语/英语回复草稿，发送前由你审核。">Analyse + brouillons de réponses FR / EN, relus par vous avant envoi.</p></div>
+<div class="card"><span class="tag">OFFRE DE LANCEMENT</span><h3>Pack Contenu Mensuel</h3><div class="price">149€ / mois</div><p data-fr="8 publications, visuels + textes + calendrier. FR / EN. Prêt à publier." data-en="8 posts, visuals + captions + calendar. FR / EN. Ready to publish." data-zh="每月8条帖子，图片 + 文案 + 发布日历。法语 / 英语，直接能发。">8 publications, visuels + textes + calendrier. FR / EN. Prêt à publier.</p></div>
+<div class="card"><h3>Assistant IA FAQ</h3><div class="price">Bientôt disponible</div><p data-fr="Réponses aux questions fréquentes, relues par un humain." data-en="FAQ answers, reviewed by a human." data-zh="常见问题自动回复，人工审核。">Réponses aux questions fréquentes, relues par un humain.</p></div>
+<div class="card"><h3>Mini-site Vitrine 1 page</h3><div class="price">390€</div><p data-fr="1 page : photos, menu, carte, contact. Sur mobile." data-en="1 page: photos, menu, map, contact. Mobile-friendly." data-zh="1页展示站：照片、菜单、地图、联系方式，手机能看。">1 page : photos, menu, carte, contact. Sur mobile.</p></div>
+<div class="card"><h3>Pack Visibilité Locale</h3><div class="price">490€ one-shot</div><p data-fr="Google Maps + 10 visuels + 1 mois de contenu." data-en="Google Maps + 10 visuals + 1 month of content." data-zh="谷歌地图优化 + 10张图 + 1个月内容。">Google Maps + 10 visuels + 1 mois de contenu.</p></div>
+</div>
+<p style="margin-top:12px;font-size:13px;color:#a99f8d">Clients : Pâtisseries / Boulangeries · Restaurants · Gîtes · Boutiques · Animaleries</p>
+</section>
+
+<section>
+<h2 data-fr="Nos univers <i>en mouvement</i>" data-en="Our worlds <i>in motion</i>" data-zh="我们的世界 <i>动起来</i>">Nos univers <i>en mouvement</i></h2>
+<p class="sub">Exemple — Visuel généré avec l'aide de l'IA, dirigé à la main</p>
+<div class="gifs">
+<div class="gif"><img src="dessert.gif" alt="Dessert"><div><b>Pâtisserie</b><br><small>Tarte aux Pralines — Mimi approuve</small></div></div>
+<div class="gif"><img src="gite.gif" alt="Gîte"><div><b>Gîte / Chambre</b><br><small>Chambre chaleureuse, Dordogne</small></div></div>
+<div class="gif"><img src="resto.gif" alt="Restaurant"><div><b>Restaurant</b><br><small>Ambiance cosy, à table</small></div></div>
+</div>
+</section>
+
+<section>
+<div class="demo">
+<h2 data-fr="Démo — <i>Description produit multilingue</i>" data-en="Demo — <i>Multilingual product description</i>" data-zh="演示 — <i>多语种产品描述</i>">Démo — <i>Description produit multilingue</i></h2>
+<p class="sub">Démo — Exemple de résultat</p>
+<label>Produit / Product</label>
+<input id="prod" value="Tarte aux Pralines">
+<label>Langue / Language</label>
+<select id="lang2"><option value="fr">Français</option><option value="en">English</option><option value="zh">中文</option></select>
+<button class="btn" onclick="gen()" style="margin-top:10px">Générer / Generate / 生成</button>
+<p id="out" style="margin-top:14px;background:#121212;padding:14px;border-radius:12px"></p>
+</div>
+</section>
+
+<section id="contact">
+<h2>Contact</h2>
+<p>Email : <a href="mailto:petitemimi.atelier@gmail.com">petitemimi.atelier@gmail.com</a><br>Zone : Bergerac / Dordogne — partout en France, à distance</p>
+</section>
+
+<div class="foot">Petite Mimi Atelier — Mentions légales : en cours d'immatriculation. Visuels générés avec l'aide de l'IA, dirigés à la main. / Visuals generated with AI assistance, human-directed.</div>
+
+<script>
+function setLang(l){
+  document.querySelectorAll('[data-fr]').forEach(el=>{
+    const v = el.getAttribute('data-'+l);
+    if(v) el.innerHTML=v;
+  });
+  ['fr','en','zh'].forEach(k=>document.getElementById('b-'+k).classList.toggle('active',k===l));
+  document.documentElement.lang=l;
+}
+function gen(){
+  const p=document.getElementById('prod').value||'Tarte aux Pralines';
+  const l=document.getElementById('lang2').value;
+  const m={
+    fr: p+' — Pâte dorée, pralines roses croquantes, douceur de Dordogne. À déguster au salon ou à emporter.',
+    en: p+' — Golden pastry, crunchy pink pralines, Dordogne sweetness. Enjoy in-store or to take away.',
+    zh: p+' — 金黄酥皮，粉色果仁糖脆脆的，多尔多涅的甜蜜。可堂食 / 打包。'
+  };
+  document.getElementById('out').textContent=m[l];
+}
+gen();
+</script>
+</body>
+</html>
